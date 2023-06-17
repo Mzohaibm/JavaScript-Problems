@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <!-- first  -->
+    <div class="one">
+      <div class="first">
+        <h2 id="day"></h2>
+        <h2 id="time"></h2>
+      </div>
+      <!-- second problem  -->
+      <div class="second">
+        <h1>Calculator for division and multiplication</h1>
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" />
+        <br />
+        <br />
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" />
+        <br />
+        <br />
+        <label for="operation">Operation:</label>
+        <select id="operation">
+          <option value="multiplication">Multiplication</option>
+          <option value="division">Division</option>
+        </select>
+        <br />
+        <br />
+        <button onclick="calculate()">Calculate</button>
+        <br />
+        <br />
+        <div id="result"></div>
+      </div>
+    </div>
+    <div class="two">
+      <!-- problem 3  -->
+      <div class="third">
+        <h1>Array Input from user</h1>
+        <label for="valueInput">Enter a value:</label>
+        <input type="text" id="valueInput" />
+        <br />
+        <br />
+        <button onclick="addValue()">Add Value</button>
+        <br />
+        <br />
+        <h2>Values:</h2>
+        <ul id="valueList"></ul>
+      </div>
+      <!-- problem 4 -->
+      <div class="fourth">
+        <h1>Object Input from user</h1>
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" />
+        <br />
+        <br />
+        <label for="ageInput">Age:</label>
+        <input type="text" id="ageInput" />
+        <br />
+        <br />
+        <label for="cityInput">City:</label>
+        <input type="text" id="cityInput" />
+        <br />
+        <br />
+        <button onclick="addPerson()">Add Person</button>
+        <br />
+        <br />
+        <h2>Person Data:</h2>
+        <div id="personData"></div>
+      </div>
+    </div>
+    <script src="type.js"></script>
+  </body>
+</html>
